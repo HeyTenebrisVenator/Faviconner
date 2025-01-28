@@ -24,7 +24,7 @@ for domain in file:
         if response.status_code == 200:
             favicon = codecs.encode(response.content, 'base64')
             hash = mmh3.hash(favicon)
-            open(save, 'w').write(f'{domain} - {hash}\n')
+            open(save, 'a').write(f'{domain} - {hash}\n')
             open(save + '_hashs', 'a').write(hash + '\n')
     except:
         print('ERRO')

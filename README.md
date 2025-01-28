@@ -12,8 +12,10 @@ To use reconner you need first install the requirements.txt
 The favicon hash can be used for many recon processes, as use it in censys or shodan
 
 SHODAN:
+
 ```http.favicon.hash:<hash>```
 
 CENSYS:
+
 ```services.http.response.favicons.hashes:<hash>```
 

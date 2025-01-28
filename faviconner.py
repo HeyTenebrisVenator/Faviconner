@@ -25,7 +25,7 @@ for domain in file:
             favicon = codecs.encode(response.content, 'base64')
             hash = mmh3.hash(favicon)
             open(save, 'w').write(f'{domain} - {hash}\n')
-            open(save + '_hashs', 'a').write(hash)
+            open(save + '_hashs', 'a').write(hash + '\n')
     except:
         print('ERRO')
         pass
